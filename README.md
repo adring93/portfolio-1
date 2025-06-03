@@ -28,8 +28,8 @@ I'm a first-year Frontend Developer student passionate about crafting beautiful,
 - **Semester Project 1**  
   Interactive web app with Vanilla JS and API integration, focusing on modern UI/UX.
 
-- **Exam Project 1**  
-  Comprehensive frontend exam project with advanced features.
+- **HTML & CSS Resit  **  
+  Wellness site with modern HTML/CSS design for resit.
 
 ---
 
