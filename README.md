@@ -6,7 +6,7 @@ A personal portfolio website for Adrian Ingvartsen, showcasing three frontend pr
 
 ## About Me
 
-Hi, I'm Adrian Ingvartsen!  
+Hi, I'm Adrian Ingvartsen.  
 I'm a first-year Frontend Developer student passionate about crafting beautiful, accessible, and impactful web experiences. This portfolio is part of my learning journey and contains selected projects created during my studies.
 
 ---
