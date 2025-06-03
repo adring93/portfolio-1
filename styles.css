@@ -306,7 +306,7 @@ nav a:focus {
   margin-bottom: 0.8rem;
 }
 .info-section-cards .info-card p {
-  color: var(--text);
+  color: var(--accent);
   font-size: 1.02rem;
   opacity: 0.97;
   margin-bottom: 1rem;
