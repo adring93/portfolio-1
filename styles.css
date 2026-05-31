@@ -1403,3 +1403,48 @@ footer {
     max-width: 20rem;
   }
 }
+.artwork-image {
+  position: relative;
+  padding: 0;
+  background: #111;
+}
+
+.artwork-image img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.95) contrast(1.02);
+}
+
+.artwork-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 35%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.16), transparent 45%);
+}
+
+.artwork-image .artwork-label {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  z-index: 2;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.article-artwork.artwork-image {
+  padding: 0;
+}
+
+.article-artwork.artwork-image img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  display: block;
+}
