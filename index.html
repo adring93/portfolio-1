@@ -12,179 +12,114 @@
     <a href="index.html" class="monogram" aria-label="Home">A</a>
 
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="projects.html">Projects</a>
       <a href="skills.html">Skills</a>
       <a href="about.html">About</a>
     </nav>
 
-    <a href="https://github.com/adring93" class="header-link" target="_blank" rel="noopener">
-      GitHub
+    <a href="https://github.com/adring93" class="github-link" target="_blank" rel="noopener">
+      <span class="github-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2.15c-3.2.69-3.88-1.35-3.88-1.35-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.95.1-.75.4-1.25.73-1.53-2.56-.29-5.24-1.28-5.24-5.71 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.05 0 0 .97-.31 3.17 1.18a10.98 10.98 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.1 0 4.44-2.69 5.41-5.26 5.7.42.36.79 1.05.79 2.13v3.16c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+        </svg>
+      </span>
+      <span>GitHub</span>
     </a>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Frontend portfolio exhibition</p>
-      <h1>Adrian's Frontend Gallery</h1>
-      <div class="divider" aria-hidden="true"></div>
-      <p class="hero-text">
-        A curated collection of frontend projects, each presented as a gallery piece and improved with purpose, reflection and attention to detail.
-      </p>
-    </section>
+  <main class="museum-home">
+    <section class="museum-stage">
+      <div class="stage-lights" aria-hidden="true">
+        <span class="light light-left"></span>
+        <span class="light light-right"></span>
+      </div>
 
-    <section class="gallery-intro" aria-label="Scroll hint">
-      <a href="#gallery" class="scroll-pill">
-        <span class="scroll-icon">↓</span>
+      <div class="hero-on-wall">
+        <p class="eyebrow">Frontend portfolio exhibition</p>
+        <h1>Adrian's Frontend Gallery</h1>
+        <div class="hero-divider" aria-hidden="true"></div>
+        <p class="hero-text">
+          Explore a curated collection of projects, each crafted with purpose, reflection and attention to detail.
+        </p>
+      </div>
+
+      <div class="gallery-frames-home" id="gallery">
+        <article class="frame-piece frame-piece-side" aria-hidden="true">
+          <div class="frame side-frame">
+            <div class="artwork artwork-side"></div>
+          </div>
+        </article>
+
+        <article class="frame-piece frame-piece-main">
+          <a href="css-frameworks.html" class="frame-link">
+            <div class="frame home-frame">
+              <div class="artwork artwork-css">
+                <span class="artwork-label">Social App</span>
+              </div>
+              <span class="plaque">01</span>
+            </div>
+          </a>
+          <div class="piece-info home-piece-info">
+            <h2>CSS Frameworks</h2>
+            <p>Exploring modern CSS frameworks to build beautiful, responsive UI.</p>
+            <a href="css-frameworks.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="frame-piece frame-piece-main">
+          <a href="javascript-frameworks.html" class="frame-link">
+            <div class="frame home-frame">
+              <div class="artwork artwork-js">
+                <span class="artwork-label">Online Store</span>
+              </div>
+              <span class="plaque">02</span>
+            </div>
+          </a>
+          <div class="piece-info home-piece-info">
+            <h2>JavaScript Frameworks</h2>
+            <p>Building interactive, component driven apps with modern JavaScript.</p>
+            <a href="javascript-frameworks.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="frame-piece frame-piece-main">
+          <a href="semester-project-2.html" class="frame-link">
+            <div class="frame home-frame">
+              <div class="artwork artwork-sp2">
+                <span class="artwork-label">AuctionHub</span>
+              </div>
+              <span class="plaque">03</span>
+            </div>
+          </a>
+          <div class="piece-info home-piece-info">
+            <h2>Semester Project 2</h2>
+            <p>A full stack academic project focused on collaboration and real world impact.</p>
+            <a href="semester-project-2.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="frame-piece frame-piece-side" aria-hidden="true">
+          <div class="frame side-frame">
+            <div class="artwork artwork-side"></div>
+          </div>
+        </article>
+      </div>
+
+      <a href="projects.html" class="scroll-explore">
+        <span class="scroll-icon-circle">←</span>
         <span>Scroll to explore</span>
+        <span class="scroll-arrow">↓</span>
       </a>
+
+      <aside class="quote-panel" aria-label="Design quote">
+        <p>“Good design is like art—<br>it communicates.”</p>
+        <span>— Adrian</span>
+        <strong>Adrian</strong>
+      </aside>
+
+      <div class="gallery-bench-large" aria-hidden="true"></div>
     </section>
-
-    <section class="gallery-wall" id="gallery" aria-labelledby="gallery-title">
-      <div class="section-heading">
-        <p class="eyebrow">Main exhibition</p>
-        <h2 id="gallery-title">Portfolio 2 projects</h2>
-        <p>
-          These three projects were selected, reviewed and improved for Portfolio 2. Each piece shows a different part of my development as a frontend student.
-        </p>
-      </div>
-
-      <article class="gallery-piece featured-piece">
-        <a href="css-frameworks.html" class="frame-link">
-          <div class="frame">
-            <div class="artwork artwork-css">
-              <span class="artwork-label">Social App</span>
-            </div>
-            <span class="plaque">01</span>
-          </div>
-        </a>
-        <div class="piece-info">
-          <p class="piece-kicker">Portfolio 2 required</p>
-          <h3>CSS Frameworks</h3>
-          <p>Responsive social app prototype improved with cleaner design, better contrast and live deployment.</p>
-          <a href="css-frameworks.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="gallery-piece featured-piece">
-        <a href="javascript-frameworks.html" class="frame-link">
-          <div class="frame">
-            <div class="artwork artwork-js">
-              <span class="artwork-label">Online Store</span>
-            </div>
-            <span class="plaque">02</span>
-          </div>
-        </a>
-        <div class="piece-info">
-          <p class="piece-kicker">Portfolio 2 required</p>
-          <h3>JavaScript Frameworks</h3>
-          <p>React and TypeScript store improved with cart calculation fixes and visible user feedback.</p>
-          <a href="javascript-frameworks.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="gallery-piece featured-piece">
-        <a href="semester-project-2.html" class="frame-link">
-          <div class="frame">
-            <div class="artwork artwork-sp2">
-              <span class="artwork-label">AuctionHub</span>
-            </div>
-            <span class="plaque">03</span>
-          </div>
-        </a>
-        <div class="piece-info">
-          <p class="piece-kicker">Portfolio 2 required</p>
-          <h3>Semester Project 2</h3>
-          <p>Auction marketplace improved with stronger listing cards and a more polished browsing experience.</p>
-          <a href="semester-project-2.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-    </section>
-
-    <section class="extended-gallery" aria-labelledby="more-work-title">
-      <div class="section-heading">
-        <p class="eyebrow">Beyond Portfolio 2</p>
-        <h2 id="more-work-title">More work in the collection</h2>
-        <p>
-          The full project gallery includes exams, course assignments and team work from my frontend development studies.
-        </p>
-      </div>
-
-      <div class="small-gallery-grid">
-        <article class="small-piece">
-          <div class="small-frame artwork-holidaze">
-            <span>Holidaze</span>
-          </div>
-          <div>
-            <h3>Project Exam 2</h3>
-            <p>A larger React and TypeScript accommodation booking app built over several weeks.</p>
-            <div class="mini-links">
-              <a href="https://holidaze-adrian-pe2.netlify.app/" target="_blank" rel="noopener">Live</a>
-              <a href="https://github.com/adring93/project-exam-2-holidaze" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="small-piece">
-          <div class="small-frame artwork-agency">
-            <span>Agency 2</span>
-          </div>
-          <div>
-            <h3>Smart Recipe Book</h3>
-            <p>Team project work with reusable components, routing and production focused UI improvements.</p>
-            <div class="mini-links">
-              <a href="https://github.com/adring93" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="small-piece">
-          <div class="small-frame artwork-gutwell">
-            <span>GutWell</span>
-          </div>
-          <div>
-            <h3>Project Exam 1</h3>
-            <p>A health focused blog project showing design, structure, content and responsive layout.</p>
-            <div class="mini-links">
-              <a href="https://gutwell.netlify.app/" target="_blank" rel="noopener">Live</a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="center-action">
-        <a href="projects.html" class="museum-button">View full project gallery</a>
-      </div>
-    </section>
-
-    <section class="home-skills-preview">
-      <div>
-        <p class="eyebrow">Skills wall</p>
-        <h2>What I bring as a frontend developer</h2>
-        <p>
-          I have worked with HTML, CSS, JavaScript, TypeScript, React, API integration, routing, state, deployment, testing habits and project reflection.
-        </p>
-      </div>
-      <a href="skills.html" class="museum-button">Explore skills</a>
-    </section>
-
-    <section class="contact-card" id="contact">
-      <blockquote>
-        “Good design is like art. It communicates.”
-      </blockquote>
-      <div class="contact-links">
-        <a href="mailto:adring03472@stud.noroff.no">Email</a>
-        <a href="https://github.com/adring93" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/adrian-i-414278358/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </section>
-
-    <aside class="quote-bubble" aria-label="Design quote">
-      <p>“Good design is like art. It communicates.”</p>
-      <span>— Adrian</span>
-    </aside>
-
-    <div class="gallery-bench" aria-hidden="true"></div>
   </main>
 
   <footer>
