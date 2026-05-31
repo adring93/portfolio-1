@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Frameworks | Adrian's Frontend Gallery</title>
+  <meta name="description" content="JavaScript Frameworks project article for Portfolio 2.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="monogram" aria-label="Home">A</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <a href="https://github.com/adring93/js-frameworks-ca" class="header-link" target="_blank" rel="noopener">
+      GitHub
+    </a>
+  </header>
+
+  <main>
+    <article class="project-article">
+      <a href="index.html#gallery" class="back-link">← Back to gallery</a>
+
+      <section class="article-hero">
+        <p class="eyebrow">Gallery piece 02</p>
+        <h1>JavaScript Frameworks</h1>
+        <p class="article-lead">
+          A React and TypeScript online store built with the Noroff Online Shop API, improved for Portfolio 2 by fixing cart calculation and adding clearer user feedback.
+        </p>
+
+        <div class="article-actions">
+          <a href="https://adrian-jsframework.netlify.app/" target="_blank" rel="noopener">Live Site</a>
+          <a href="https://github.com/adring93/js-frameworks-ca#readme" target="_blank" rel="noopener">GitHub README</a>
+          <button type="button" class="copy-link-button" data-copy-link>Copy Link</button>
+        </div>
+      </section>
+
+      <figure class="article-frame">
+        <div class="article-artwork artwork-js">
+          <span class="artwork-label">Online Store</span>
+        </div>
+        <figcaption>
+          JavaScript Frameworks project, presented as a React and TypeScript e-commerce experience.
+        </figcaption>
+      </figure>
+
+      <section class="article-grid">
+        <div class="article-panel">
+          <h2>Project overview</h2>
+          <p>
+            This project was created for the JavaScript Frameworks course assignment. It is a responsive online store where users can browse products, search with live suggestions, view product details, add items to cart, adjust quantities, complete checkout and use a validated contact form.
+          </p>
+        </div>
+
+        <div class="article-panel">
+          <h2>What I improved</h2>
+          <p>
+            Based on teacher feedback, I improved the cart experience. I fixed the cart total calculation so discounted product prices are used correctly, and I added visible feedback when a user adds a product to the cart.
+          </p>
+        </div>
+
+        <div class="article-panel">
+          <h2>Technical improvements</h2>
+          <p>
+            The cart state uses React Context and localStorage to survive refresh. For Portfolio 2, I added a cart message state, accessible toast feedback and an API base URL fallback to make the deployed site more reliable.
+          </p>
+        </div>
+
+        <div class="article-panel">
+          <h2>Reflection</h2>
+          <p>
+            This project showed me that a feature can technically work but still feel unclear to the user. Adding feedback after cart actions made the interaction feel more complete, and fixing the price calculation made the shopping flow more trustworthy.
+          </p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 Adrian Ingvartsen. Portfolio 2.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
