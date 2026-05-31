@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header hero-header">
     <a href="index.html" class="monogram" aria-label="Home">A</a>
 
     <nav class="main-nav" aria-label="Main navigation">
@@ -28,100 +28,62 @@
     </a>
   </header>
 
-  <main class="museum-home">
-    <section class="museum-stage">
-      <div class="stage-lights" aria-hidden="true">
-        <span class="light light-left"></span>
-        <span class="light light-right"></span>
+  <main>
+    <section class="hero-scene" aria-label="Adrian's Frontend Gallery">
+      <div class="hero-hotspots" aria-label="Featured Portfolio 2 projects">
+        <a href="css-frameworks.html" class="hero-hotspot hotspot-css">
+          <span>CSS Frameworks</span>
+        </a>
+
+        <a href="javascript-frameworks.html" class="hero-hotspot hotspot-js">
+          <span>JavaScript Frameworks</span>
+        </a>
+
+        <a href="semester-project-2.html" class="hero-hotspot hotspot-sp2">
+          <span>Semester Project 2</span>
+        </a>
       </div>
 
-      <div class="hero-on-wall">
-        <p class="eyebrow">Frontend portfolio exhibition</p>
-        <h1>Adrian's Frontend Gallery</h1>
-        <div class="hero-divider" aria-hidden="true"></div>
-        <p class="hero-text">
-          Explore a curated collection of projects, each crafted with purpose, reflection and attention to detail.
-        </p>
-      </div>
-
-      <div class="gallery-frames-home" id="gallery">
-        <article class="frame-piece frame-piece-side" aria-hidden="true">
-          <div class="frame side-frame">
-            <div class="artwork artwork-side"></div>
-          </div>
-        </article>
-
-        <article class="frame-piece frame-piece-main">
-          <a href="css-frameworks.html" class="frame-link">
-            <div class="frame home-frame">
-              <div class="artwork artwork-image">
-                <img src="thumbnails/css-frameworks.png.png" alt="Screenshot of the CSS Frameworks Social App project">
-                <span class="artwork-label">Social App</span>
-              </div>
-              <span class="plaque">01</span>
-            </div>
-          </a>
-          <div class="piece-info home-piece-info">
-            <h2>CSS Frameworks</h2>
-            <p>Exploring modern CSS frameworks to build beautiful, responsive UI.</p>
-            <a href="css-frameworks.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="frame-piece frame-piece-main">
-          <a href="javascript-frameworks.html" class="frame-link">
-            <div class="frame home-frame">
-              <div class="artwork artwork-image">
-                <img src="thumbnails/js-frameworks.png.png" alt="Screenshot of the JavaScript Frameworks online store project">
-                <span class="artwork-label">Online Store</span>
-              </div>
-              <span class="plaque">02</span>
-            </div>
-          </a>
-          <div class="piece-info home-piece-info">
-            <h2>JavaScript Frameworks</h2>
-            <p>Building interactive, component driven apps with modern JavaScript.</p>
-            <a href="javascript-frameworks.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="frame-piece frame-piece-main">
-          <a href="semester-project-2.html" class="frame-link">
-            <div class="frame home-frame">
-              <div class="artwork artwork-image">
-                <img src="thumbnails/semester-project-2.png.png" alt="Screenshot of the AuctionHub Semester Project 2 project">
-                <span class="artwork-label">AuctionHub</span>
-              </div>
-              <span class="plaque">03</span>
-            </div>
-          </a>
-          <div class="piece-info home-piece-info">
-            <h2>Semester Project 2</h2>
-            <p>A full stack academic project focused on collaboration and real world impact.</p>
-            <a href="semester-project-2.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="frame-piece frame-piece-side" aria-hidden="true">
-          <div class="frame side-frame">
-            <div class="artwork artwork-side"></div>
-          </div>
-        </article>
-      </div>
-
-      <a href="projects.html" class="scroll-explore">
-        <span class="scroll-icon-circle">←</span>
+      <a href="projects.html" class="hero-scroll-pill">
+        <span class="hero-scroll-circle">←</span>
         <span>Scroll to explore</span>
-        <span class="scroll-arrow">↓</span>
+        <span class="hero-scroll-arrow">↓</span>
       </a>
+    </section>
 
-      <aside class="quote-panel" aria-label="Design quote">
-        <p>“Good design is like art—<br>it communicates.”</p>
-        <span>— Adrian</span>
-        <strong>Adrian</strong>
-      </aside>
+    <section class="home-intro-panel">
+      <p class="eyebrow">Portfolio 2 exhibition</p>
+      <h1>Frontend projects presented as a digital gallery</h1>
+      <p>
+        This portfolio presents three improved Portfolio 2 projects, plus a wider collection of frontend work from my studies. The gallery concept was chosen to make the presentation feel creative, memorable and professional.
+      </p>
+      <div class="home-intro-actions">
+        <a href="projects.html" class="museum-button">View all projects</a>
+        <a href="skills.html" class="museum-button">View skills</a>
+      </div>
+    </section>
 
-      <div class="gallery-bench-large" aria-hidden="true"></div>
+    <section class="home-showcase-grid">
+      <article>
+        <span>01</span>
+        <h2>CSS Frameworks</h2>
+        <p>Social app prototype improved with cleaner design, better contrast and working live deployment.</p>
+        <a href="css-frameworks.html">Read article →</a>
+      </article>
+
+      <article>
+        <span>02</span>
+        <h2>JavaScript Frameworks</h2>
+        <p>React and TypeScript store improved with cart calculation fixes and visible user feedback.</p>
+        <a href="javascript-frameworks.html">Read article →</a>
+      </article>
+
+      <article>
+        <span>03</span>
+        <h2>Semester Project 2</h2>
+        <p>Auction marketplace improved with stronger listing cards and a more polished browsing experience.</p>
+        <a href="semester-project-2.html">Read article →</a>
+      </article>
     </section>
 
     <section class="home-skills-preview">
