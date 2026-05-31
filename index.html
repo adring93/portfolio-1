@@ -3,115 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adrian Ingvartsen | Frontend Developer Portfolio</title>
+  <title>Adrian's Frontend Gallery | Portfolio 2</title>
+  <meta name="description" content="Portfolio 2 gallery website for Adrian Ingvartsen, showcasing CSS Frameworks, JavaScript Frameworks and Semester Project 2.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="site-header">
+    <a href="index.html" class="monogram" aria-label="Home">A</a>
 
-  <header>
-    <div class="navbar">
-      <div class="logo">
-        Adrian Ingvartsen
-        <span class="logo-subtitle">Frontend Developer</span>
-      </div>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-    <section class="hero">
-      <h1>Hello, I'm Adrian!</h1>
-      <p>Frontend Developer passionate about crafting beautiful, accessible, and impactful web experiences.</p>
-      <a href="#contact" class="cta-btn">Let's Connect</a>
-    </section>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="https://github.com/adring93" class="header-link" target="_blank" rel="noopener">
+      GitHub
+    </a>
   </header>
 
   <main>
-    <h2 class="section-title" id="projects">Featured Projects</h2>
-    <section class="projects">
-      <div class="project-card" tabindex="0">
-        <img class="project-image" src="thumbnails/rainydays-thumbnail.png" alt="Rainydays project thumbnail">
-        <div class="project-info">
-          <h3>Rainydays</h3>
-          <p>E-commerce concept for weather-inspired outerwear. Modern and user-friendly.</p>
-          <div class="project-links">
-            <a href="https://github.com/adring93?tab=repositories" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.figma.com/design/INxnGAJ3UCBdGq9a0lkMjC/Rainydays-main-task?node-id=0-1&p=f&t=O1gfnmdIBzuUtTic-0" target="_blank" rel="noopener">Design</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card" tabindex="0">
-        <img class="project-image" src="thumbnails/semester-project-1-thumbnail.png" alt="Semester Project 1 thumbnail">
-        <div class="project-info">
-          <h3>Project exam 1</h3>
-          <p>Gutwell Blog: Health-focused blog sharing wellness tips with a clean, engaging design.</p>
-          <div class="project-links">
-            <a href="https://github.com/NoroffFEU/FED1-PE1-adring93" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://gutwell.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card" tabindex="0">
-        <img class="project-image" src="thumbnails/Rootrise-thumbnail.png" alt="Rootrise project thumbnail">
-        <div class="project-info">
-          <h3>Rootrise</h3>
-          <p>Wellness site with modern HTML/CSS design for resit.</p>
-          <div class="project-links">
-            <a href="https://github.com/adring93/html-css-resit-AdrianIngvartsen/" class="learn-more" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://adring93.github.io/html-css-resit-AdrianIngvartsen" class="secondary-link" target="_blank" rel="noopener">Live Demo</a>
-          </div>
-        </div>
-      </div>
+    <section class="hero">
+      <p class="eyebrow">Portfolio 2 Exhibition</p>
+      <h1>Adrian's Frontend Gallery</h1>
+      <div class="divider" aria-hidden="true"></div>
+      <p class="hero-text">
+        A curated collection of frontend projects, presented as gallery pieces and improved for professional portfolio presentation.
+      </p>
     </section>
 
-    <section class="quote-section">
+    <section class="gallery-wall" id="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="sr-only">Project gallery</h2>
+
+      <article class="gallery-piece">
+        <a href="css-frameworks.html" class="frame-link">
+          <div class="frame">
+            <div class="artwork artwork-css">
+              <span class="artwork-label">Social App</span>
+            </div>
+            <span class="plaque">01</span>
+          </div>
+        </a>
+        <div class="piece-info">
+          <h3>CSS Frameworks</h3>
+          <p>Responsive social app prototype improved with cleaner design, better contrast and live deployment.</p>
+          <a href="css-frameworks.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="gallery-piece">
+        <a href="javascript-frameworks.html" class="frame-link">
+          <div class="frame">
+            <div class="artwork artwork-js">
+              <span class="artwork-label">Online Store</span>
+            </div>
+            <span class="plaque">02</span>
+          </div>
+        </a>
+        <div class="piece-info">
+          <h3>JavaScript Frameworks</h3>
+          <p>React and TypeScript store improved with cart calculation fixes and visible user feedback.</p>
+          <a href="javascript-frameworks.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="gallery-piece">
+        <a href="semester-project-2.html" class="frame-link">
+          <div class="frame">
+            <div class="artwork artwork-sp2">
+              <span class="artwork-label">AuctionHub</span>
+            </div>
+            <span class="plaque">03</span>
+          </div>
+        </a>
+        <div class="piece-info">
+          <h3>Semester Project 2</h3>
+          <p>Auction marketplace improved with stronger listing cards and a more polished browsing experience.</p>
+          <a href="semester-project-2.html" class="view-link">View Project <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <p class="eyebrow">About this portfolio</p>
+        <h2>A gallery of progress</h2>
+      </div>
+      <p>
+        This portfolio presents three earlier course assignments that have been reviewed, improved and prepared for professional presentation. The gallery concept was chosen to make each project feel like a curated piece of work, while still keeping the site simple, accessible and easy to navigate.
+      </p>
+    </section>
+
+    <section class="contact-card" id="contact">
       <blockquote>
-        "Creativity is intelligence having fun."
+        “Good design is like art. It communicates.”
       </blockquote>
-      <cite>- Albert Einstein</cite>
-    </section>
-
-    <section class="info-section-bg" id="about">
-      <div class="info-section-cards">
-        <div class="info-card">
-          <h3>Hi, I'm Adrian 👋</h3>
-          <p>
-            I'm a modern frontend developer who turns ideas into fast, accessible, and visually engaging web experiences.<br><br>
-            Whether working solo or as part of a team, I focus on clean, maintainable code and user interfaces that not only look great but feel great to use.
-          </p>
-        </div>
-        <div class="info-card" id="contact">
-          <h3>Contact</h3>
-          <p>Let's connect for collaborations or opportunities!</p>
-          <div class="project-links">
-            <a href="mailto:adring03472@stud.noroff.no">Email Me</a>
-            <a href="https://www.linkedin.com/in/adrian-i-414278358/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/adring93" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
+      <div class="contact-links">
+        <a href="mailto:adring03472@stud.noroff.no">Email</a>
+        <a href="https://github.com/adring93" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/adrian-i-414278358/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-social">
-      <a href="mailto:adring03472@stud.noroff.no" aria-label="Email">
-        <svg width="1.7em" height="1.7em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4v-9.99l8 7 8-7V18z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/adrian-i-414278358/" target="_blank" aria-label="LinkedIn">
-        <svg width="1.7em" height="1.7em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.5 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.024-3.063-1.869-3.063-1.87 0-2.156 1.459-2.156 2.969v5.698h-3v-10h2.881v1.367h.041c.401-.759 1.379-1.559 2.838-1.559 3.034 0 3.594 1.997 3.594 4.594v5.598z"/></svg>
-      </a>
-      <a href="https://github.com/adring93" target="_blank" aria-label="GitHub">
-        <svg width="1.7em" height="1.7em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .296c-6.63 0-12 5.373-12 12 0 5.299 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.082-.729.082-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.775.417-1.305.76-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.311.469-2.382 1.236-3.221-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.301 1.23.96-.267 1.98-.399 3-.404 1.02.005 2.04.137 3 .404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.649.242 2.873.118 3.176.77.839 1.235 1.91 1.235 3.221 0 4.609-2.804 5.624-5.475 5.921.429.369.812 1.096.812 2.211v3.285c0 .319.218.694.825.576C20.565 22.092 24 17.592 24 12.296c0-6.627-5.373-12-12-12"/></svg>
-      </a>
-    </div>
-    <div class="footer-bottom">
-      &copy; 2025 Adrian Ingvartsen. All rights reserved.
-    </div>
+    <p>© 2026 Adrian Ingvartsen. Portfolio 2.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
