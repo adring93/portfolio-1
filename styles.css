@@ -1006,3 +1006,11 @@ footer {
     border-width: 11px;
   }
 }
+.hero-title-card {
+  top: 8.4%;
+}
+
+.hero-click:hover,
+.hero-click:focus-visible {
+  outline: none;
+}
