@@ -32,7 +32,7 @@ body {
   color: var(--text);
   font-family: var(--serif);
   background:
-    linear-gradient(rgba(251, 246, 238, 0.72), rgba(238, 228, 214, 0.78)),
+    linear-gradient(rgba(251, 246, 238, 0.55), rgba(238, 228, 214, 0.62)),
     url("thumbnails/gallery-page-bg.png");
   background-size: cover;
   background-position: center top;
@@ -45,8 +45,8 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: rgba(255, 249, 241, 0.16);
-  backdrop-filter: blur(2px);
+  background: rgba(255, 249, 241, 0.08);
+  backdrop-filter: blur(1px);
   pointer-events: none;
 }
 
@@ -207,7 +207,7 @@ button {
 .hero-title-card {
   position: absolute;
   left: 50%;
-  top: 8.8%;
+  top: 7.2%;
   width: min(92vw, 900px);
   transform: translateX(-50%);
   text-align: center;
@@ -215,10 +215,10 @@ button {
 }
 
 .hero-title-card p {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.55rem;
   color: var(--accent);
   font-family: var(--sans);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -227,7 +227,7 @@ button {
 .hero-title-card h1 {
   color: #1e242a;
   font-family: var(--serif);
-  font-size: clamp(3.4rem, 5.25vw, 5.7rem);
+  font-size: clamp(3rem, 4.65vw, 4.95rem);
   font-weight: 400;
   line-height: 0.92;
   letter-spacing: -0.06em;
@@ -235,7 +235,7 @@ button {
 }
 
 .hero-title-card span {
-  display: none;
+  display: none !important;
 }
 
 .hero-click {
@@ -913,7 +913,7 @@ footer {
 
   .hero-title-card {
     position: absolute;
-    top: 14%;
+    top: 13%;
     left: 50%;
     width: 92%;
     transform: translateX(-50%);
@@ -921,7 +921,7 @@ footer {
   }
 
   .hero-title-card span {
-    display: none;
+    display: none !important;
   }
 
   .hero-click {
@@ -971,7 +971,7 @@ footer {
   }
 
   .hero-title-card h1 {
-    font-size: clamp(2.6rem, 10vw, 4.2rem);
+    font-size: clamp(2.45rem, 9vw, 3.7rem);
   }
 
   .hero-scroll-pill {
