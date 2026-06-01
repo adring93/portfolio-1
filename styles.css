@@ -169,10 +169,6 @@ button {
   font-family: var(--sans);
 }
 
-.github-mark {
-  display: none;
-}
-
 .github-link::before {
   content: "";
   width: 1.25rem;
@@ -207,7 +203,7 @@ button {
 .hero-title-card {
   position: absolute;
   left: 50%;
-  top: 7.2%;
+  top: 10.8%;
   width: min(92vw, 900px);
   transform: translateX(-50%);
   text-align: center;
@@ -235,21 +231,30 @@ button {
 }
 
 .hero-title-card span {
-  display: none !important;
+  display: none;
 }
 
 .hero-click {
   position: absolute;
   z-index: 20;
   display: block;
-  text-decoration: none;
+  border: none;
   border-radius: 0.4rem;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .hero-click:hover,
-.hero-click:focus-visible {
-  outline: 2px solid rgba(31, 63, 99, 0.28);
-  outline-offset: 5px;
+.hero-click:focus,
+.hero-click:focus-visible,
+.hero-click:active {
+  border: none;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
 }
 
 .hero-click-css {
@@ -921,7 +926,7 @@ footer {
   }
 
   .hero-title-card span {
-    display: none !important;
+    display: none;
   }
 
   .hero-click {
@@ -1005,48 +1010,4 @@ footer {
     min-height: 215px;
     border-width: 11px;
   }
-}
-.hero-title-card {
-  top: 8.4%;
-}
-
-.hero-click:hover,
-.hero-click:focus-visible {
-  outline: none;
-}
-.hero-title-card {
-  top: 10.8% !important;
-}
-
-.hero-click,
-.hero-click:hover,
-.hero-click:focus,
-.hero-click:focus-visible,
-.hero-click:active {
-  outline: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-.hero-click {
-  cursor: pointer;
-}
-.hero-title-card {
-  top: 10.8% !important;
-}
-
-.hero-click,
-.hero-click:hover,
-.hero-click:focus,
-.hero-click:focus-visible,
-.hero-click:active {
-  outline: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-.hero-click {
-  cursor: pointer;
 }
