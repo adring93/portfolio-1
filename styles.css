@@ -1,18 +1,17 @@
 :root {
-  --wall: #eee5d8;
+  --wall: #eee4d6;
   --wall-light: #fbf6ee;
-  --wall-dark: #d7c9b7;
-  --paper: #f7f0e6;
-  --paper-soft: rgba(255, 249, 241, 0.72);
-  --paper-strong: rgba(255, 249, 241, 0.92);
+  --wall-dark: #d6c7b5;
+  --paper: #f8f1e7;
+  --paper-soft: rgba(255, 249, 241, 0.66);
+  --paper-strong: rgba(255, 249, 241, 0.9);
   --text: #1f252b;
-  --muted: #646d78;
+  --muted: #66717d;
   --accent: #1f3f63;
   --black: #11161c;
   --white: #ffffff;
   --line: rgba(31, 37, 43, 0.14);
   --shadow-soft: 0 18px 42px rgba(31, 37, 43, 0.12);
-  --shadow-medium: 0 24px 60px rgba(31, 37, 43, 0.18);
   --shadow-heavy: 0 34px 90px rgba(31, 37, 43, 0.25);
   --max: 1240px;
   --sans: Arial, Helvetica, sans-serif;
@@ -34,14 +33,19 @@ body {
   color: var(--text);
   font-family: var(--serif);
   background:
-    radial-gradient(circle at 15% 5%, rgba(255, 255, 255, 0.72), transparent 22rem),
-    radial-gradient(circle at 85% 5%, rgba(255, 255, 255, 0.54), transparent 20rem),
+    radial-gradient(circle at 15% 5%, rgba(255, 255, 255, 0.7), transparent 22rem),
+    radial-gradient(circle at 85% 5%, rgba(255, 255, 255, 0.5), transparent 20rem),
     linear-gradient(180deg, var(--wall-light), var(--wall) 54%, var(--wall-dark));
   overflow-x: hidden;
 }
 
 a {
   color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 button,
@@ -51,11 +55,6 @@ a {
 
 button {
   font: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 .site-header {
@@ -92,7 +91,7 @@ img {
 }
 
 .hero-header::before {
-  background: rgba(250, 245, 237, 0.16);
+  background: rgba(250, 245, 237, 0.18);
   border-color: rgba(31, 37, 43, 0.04);
   box-shadow: none;
 }
@@ -104,7 +103,7 @@ img {
   height: 3.1rem;
   border: 1px solid rgba(31, 37, 43, 0.42);
   color: var(--text);
-  background: rgba(255, 249, 241, 0.46);
+  background: rgba(255, 249, 241, 0.48);
   font-family: var(--serif);
   font-size: 1.75rem;
   text-decoration: none;
@@ -183,15 +182,15 @@ img {
 .hero-wall-copy {
   position: absolute;
   left: 50%;
-  top: 13.5%;
-  z-index: 12;
+  top: 9.5%;
+  z-index: 20;
   width: min(92vw, 980px);
   transform: translateX(-50%);
   text-align: center;
 }
 
 .hero-eyebrow {
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.65rem;
   color: var(--accent);
   font-family: var(--sans);
   font-size: 0.75rem;
@@ -203,7 +202,7 @@ img {
 .hero-wall-copy h1 {
   color: #1e242a;
   font-family: var(--serif);
-  font-size: clamp(3.8rem, 6.3vw, 6.8rem);
+  font-size: clamp(3.7rem, 5.8vw, 6.2rem);
   font-weight: 400;
   line-height: 0.94;
   letter-spacing: -0.06em;
@@ -211,18 +210,19 @@ img {
 }
 
 .hero-wall-copy p:last-child {
-  width: min(90vw, 560px);
-  margin: 1rem auto 0;
-  color: rgba(31, 37, 43, 0.7);
+  width: min(90vw, 520px);
+  margin: 0.75rem auto 0;
+  color: rgba(31, 37, 43, 0.72);
   font-family: var(--sans);
-  font-size: 1rem;
-  line-height: 1.65;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .hero-frame-layer {
   position: absolute;
   inset: 0;
-  z-index: 8;
+  z-index: 12;
+  pointer-events: none;
 }
 
 .hero-art-link {
@@ -232,15 +232,16 @@ img {
   background: #f4ede4;
   box-shadow:
     inset 0 0 0 1px rgba(31, 37, 43, 0.08),
-    0 16px 34px rgba(31, 37, 43, 0.12);
+    0 14px 30px rgba(31, 37, 43, 0.1);
   text-decoration: none;
   transition: transform 180ms ease, filter 180ms ease;
+  pointer-events: auto;
 }
 
 .hero-art-link:hover,
 .hero-art-link:focus-visible {
-  transform: translateY(-4px) scale(1.01);
-  filter: saturate(1.05);
+  transform: translateY(-3px) scale(1.008);
+  filter: saturate(1.04);
   outline: 2px solid rgba(31, 63, 99, 0.35);
   outline-offset: 4px;
 }
@@ -253,68 +254,72 @@ img {
 }
 
 .hero-art-css {
-  left: 14.6%;
-  top: 38.4%;
-  width: 17.1%;
-  height: 27.3%;
+  left: 9.5%;
+  top: 36.9%;
+  width: 20.1%;
+  height: 26.1%;
 }
 
 .hero-art-js {
-  left: 40.7%;
-  top: 38.4%;
-  width: 17.5%;
-  height: 27.3%;
+  left: 38.95%;
+  top: 36.9%;
+  width: 20.1%;
+  height: 26.1%;
 }
 
 .hero-art-sp2 {
-  left: 67.8%;
-  top: 38.4%;
-  width: 15.7%;
-  height: 27.3%;
+  left: 67.95%;
+  top: 36.9%;
+  width: 20.1%;
+  height: 26.1%;
 }
 
 .hero-caption-row {
   position: absolute;
   left: 50%;
-  bottom: 7.2%;
-  z-index: 12;
-  width: min(1180px, 92vw);
+  bottom: 15.7%;
+  z-index: 18;
+  width: min(1040px, 84vw);
   transform: translateX(-50%);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .hero-caption {
+  padding: 0.78rem 0.9rem;
   text-align: center;
+  background: rgba(255, 249, 241, 0.44);
+  border: 1px solid rgba(31, 37, 43, 0.08);
+  backdrop-filter: blur(6px);
 }
 
 .hero-caption h2 {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.45rem;
   color: #1f252b;
-  font-size: clamp(1.7rem, 2vw, 2.35rem);
+  font-size: clamp(1.45rem, 1.8vw, 2rem);
   font-weight: 400;
   line-height: 1.05;
 }
 
 .hero-caption p {
-  max-width: 260px;
-  margin: 0 auto 0.95rem;
+  max-width: 230px;
+  margin: 0 auto 0.7rem;
   color: rgba(31, 37, 43, 0.72);
   font-family: var(--sans);
-  font-size: 0.92rem;
-  line-height: 1.55;
+  font-size: 0.82rem;
+  line-height: 1.45;
 }
 
 .hero-caption a {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.18rem;
   border-bottom: 2px solid rgba(31, 63, 99, 0.72);
   color: #1f252b;
   font-family: var(--sans);
-  font-size: 0.92rem;
+  font-size: 0.84rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -326,9 +331,9 @@ img {
 
 .hero-scroll-pill {
   position: absolute;
-  left: 2rem;
-  bottom: 2rem;
-  z-index: 15;
+  left: 2.1rem;
+  bottom: 2.25rem;
+  z-index: 22;
   display: inline-flex;
   align-items: center;
   gap: 0.85rem;
@@ -362,8 +367,8 @@ img {
 .hero-quote-card {
   position: absolute;
   right: 2.1rem;
-  bottom: 2rem;
-  z-index: 14;
+  bottom: 2.15rem;
+  z-index: 21;
   width: 17.5rem;
   padding: 1.15rem 1.25rem 1rem;
   border-radius: 1.15rem;
@@ -988,7 +993,7 @@ footer {
 
 @media (max-width: 1180px) {
   .hero-wall-copy {
-    top: 12%;
+    top: 8.5%;
   }
 
   .hero-wall-copy h1 {
@@ -996,15 +1001,15 @@ footer {
   }
 
   .hero-caption-row {
-    bottom: 5.8%;
+    bottom: 16.8%;
   }
 
   .hero-caption h2 {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
 
   .hero-caption p {
-    font-size: 0.86rem;
+    font-size: 0.8rem;
   }
 }
 
