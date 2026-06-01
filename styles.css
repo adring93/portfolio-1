@@ -1014,3 +1014,21 @@ footer {
 .hero-click:focus-visible {
   outline: none;
 }
+.hero-title-card {
+  top: 10.8% !important;
+}
+
+.hero-click,
+.hero-click:hover,
+.hero-click:focus,
+.hero-click:focus-visible,
+.hero-click:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.hero-click {
+  cursor: pointer;
+}
