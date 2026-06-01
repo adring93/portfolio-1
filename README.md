@@ -1,56 +1,109 @@
-# Portfolio 1
+# Portfolio 2
 
-A personal portfolio website for Adrian Ingvartsen, showcasing three frontend projects.
+A personal frontend portfolio website for Adrian Ingvartsen, built as part of the Portfolio 2 course assignment.
+
+The website presents selected frontend projects in a gallery inspired design, where each project is shown as a framed digital piece inside a modern exhibition style layout.
 
 ---
 
-## About Me
+## About
 
-Hi, I'm Adrian Ingvartsen!  
-I'm a first-year Frontend Developer student passionate about crafting beautiful, accessible, and impactful web experiences. This portfolio is part of my learning journey and contains selected projects created during my studies.
+Hi, I'm Adrian Ingvartsen.
+
+I am a frontend development student who has spent the last two years learning how to build responsive, accessible and user friendly web experiences. This portfolio showcases selected projects from my studies, with a focus on visual presentation, technical improvement and reflection.
+
+The goal of this portfolio was not only to show finished projects, but also to present them in a more memorable and professional way.
+
+---
+
+## Live Site
+
+[View Portfolio](https://adring93.github.io/portfolio-1/)
+
+---
+
+## GitHub Repository
+
+[GitHub Repository](https://github.com/adring93/portfolio-1)
 
 ---
 
 ## Features
 
-- Modern, responsive design
-- Project gallery with image modal view
-- Quote carousel with inspirational quotes
-- Contact section with email and social links
+* Gallery inspired portfolio design
+* Interactive hero section with clickable framed project previews
+* Responsive layout for desktop and mobile
+* Dedicated project pages
+* Skills page
+* About page
+* Contact links
+* Reusable visual style across all pages
+* Subtle gallery background atmosphere on inner pages
 
 ---
 
 ## Projects Showcased
 
-- **Rainydays**  
-  E-commerce concept for weather-inspired outerwear.
+### CSS Frameworks
 
-- **Semester Project 1**  
-  Interactive web app with Vanilla JS and API integration, focusing on modern UI/UX.
+A social app prototype built with modern CSS techniques and improved visual presentation.
+This project focuses on layout, spacing, reusable styling and responsive design.
 
-- **HTML & CSS Resit  **  
-  Wellness site with modern HTML/CSS design for resit.
+### JavaScript Frameworks
+
+An online store project built with React and TypeScript.
+The project includes product listing, cart functionality and a cleaner user experience.
+
+### Semester Project 2
+
+AuctionHub, an auction website where users can browse listings and interact with auction content.
+For Portfolio 2, the project was improved visually with better listing cards, stronger layout and a more polished marketplace feel.
 
 ---
 
-## How to Use
+## Built With
 
-1. Clone or download this repository.
-2. Open `index.html` in your browser to view the portfolio.
-3. Explore the projects and features!
+* HTML
+* CSS
+* JavaScript
+* Responsive design
+* GitHub Pages
+* Visual design and layout refinement
+
+---
+
+## Design Direction
+
+The portfolio uses a modern gallery concept to make the projects feel like curated exhibition pieces.
+
+The homepage uses a custom gallery hero image with the three main projects displayed inside framed artwork. The rest of the website continues the same visual direction with soft backgrounds, glass inspired panels and a calm museum style atmosphere.
+
+---
+
+## What I Improved
+
+For this portfolio, I focused on improving both presentation and professionalism.
+
+Some key improvements include:
+
+* Rebuilding the visual identity of the portfolio
+* Creating a stronger first impression
+* Adding dedicated pages for projects, skills and about
+* Improving spacing, typography and consistency
+* Making the main project section interactive
+* Giving the portfolio a more unique and memorable concept
+* Cleaning up the CSS structure after several design iterations
 
 ---
 
 ## Contact
 
-Feel free to connect or reach out for collaborations or opportunities:
-
-- **Email:** [adring03472@stud.noroff.no](mailto:adring03472@stud.noroff.no)
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **GitHub:** [adring93](https://github.com/adring93)
+* Email: [adring03472@stud.noroff.no](mailto:adring03472@stud.noroff.no)
+* GitHub: [adring93](https://github.com/adring93)
+* LinkedIn: [Adrian Ingvartsen](https://www.linkedin.com/in/adrian-i-414278358/)
 
 ---
 
 ## License
 
-This portfolio is for educational purposes.
+This project is for educational purposes.
