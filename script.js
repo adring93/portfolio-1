@@ -1,20 +1,29 @@
-const revealElements = document.querySelectorAll(".gallery-piece, .about-section, .contact-card, .article-frame, .article-panel");
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-      }
-    });
-  },
-  { threshold: 0.16 }
+const revealElements = document.querySelectorAll(
+  ".gallery-piece, .contact-card, .article-frame, .article-panel, .skill-card, .small-piece, .process-list article, .home-showcase-grid article, .home-skills-preview, .about-highlight"
 );
 
-revealElements.forEach((element) => {
-  element.classList.add("reveal");
-  observer.observe(element);
-});
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16 }
+  );
+
+  revealElements.forEach((element) => {
+    element.classList.add("reveal");
+    observer.observe(element);
+  });
+} else {
+  revealElements.forEach((element) => {
+    element.classList.add("is-visible");
+  });
+}
 
 const copyButtons = document.querySelectorAll("[data-copy-link]");
 
