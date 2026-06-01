@@ -39,26 +39,42 @@
 
   <main>
     <section class="hero-scene" aria-label="Adrian's Frontend Gallery hero section">
-      <div class="hero-hotspots" aria-label="Featured Portfolio 2 projects">
-        <a href="css-frameworks.html" class="hero-hotspot hotspot-css" aria-label="Open CSS Frameworks project"></a>
-        <a href="javascript-frameworks.html" class="hero-hotspot hotspot-js" aria-label="Open JavaScript Frameworks project"></a>
-        <a href="semester-project-2.html" class="hero-hotspot hotspot-sp2" aria-label="Open Semester Project 2"></a>
+      <div class="hero-wall-copy">
+        <p class="hero-eyebrow">Frontend portfolio exhibition</p>
+        <h1>Adrian's Frontend Gallery</h1>
+        <p>
+          Explore a curated collection of projects, each crafted with purpose and attention to detail.
+        </p>
       </div>
 
-      <div class="hero-project-copy">
-        <article class="hero-project-item hero-copy-css">
+      <div class="hero-frame-layer" aria-label="Featured portfolio projects">
+        <a href="css-frameworks.html" class="hero-art-link hero-art-css" aria-label="Open CSS Frameworks project">
+          <img src="thumbnails/css-frameworks.png.png" alt="CSS Frameworks project preview">
+        </a>
+
+        <a href="javascript-frameworks.html" class="hero-art-link hero-art-js" aria-label="Open JavaScript Frameworks project">
+          <img src="thumbnails/js-frameworks.png.png" alt="JavaScript Frameworks project preview">
+        </a>
+
+        <a href="semester-project-2.html" class="hero-art-link hero-art-sp2" aria-label="Open Semester Project 2 project">
+          <img src="thumbnails/semester-project-2.png.png" alt="Semester Project 2 project preview">
+        </a>
+      </div>
+
+      <div class="hero-caption-row">
+        <article class="hero-caption">
           <h2>CSS Frameworks</h2>
           <p>Exploring modern CSS frameworks to build beautiful, responsive UI.</p>
           <a href="css-frameworks.html">View Project <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="hero-project-item hero-copy-js">
+        <article class="hero-caption">
           <h2>JavaScript Frameworks</h2>
           <p>Building interactive, component driven apps with modern JavaScript.</p>
           <a href="javascript-frameworks.html">View Project <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="hero-project-item hero-copy-sp2">
+        <article class="hero-caption">
           <h2>Semester Project 2</h2>
           <p>A full stack academic project focused on collaboration and real world impact.</p>
           <a href="semester-project-2.html">View Project <span aria-hidden="true">→</span></a>
@@ -70,6 +86,12 @@
         <span>Scroll to explore</span>
         <span class="hero-scroll-arrow">↓</span>
       </a>
+
+      <aside class="hero-quote-card" aria-label="Design quote">
+        <p>“Good design is like art. It communicates.”</p>
+        <span>— Adrian</span>
+        <strong>Adrian</strong>
+      </aside>
     </section>
 
     <section class="home-intro-panel" id="after-hero">
