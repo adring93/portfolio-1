@@ -1,9 +1,7 @@
 :root {
   --wall: #eee4d6;
   --wall-light: #fbf6ee;
-  --wall-dark: #d6c7b5;
   --paper: #f8f1e7;
-  --paper-soft: rgba(255, 249, 241, 0.68);
   --text: #1f252b;
   --muted: #66717d;
   --accent: #1f3f63;
@@ -180,8 +178,7 @@ button {
 
 .hero-scene {
   position: relative;
-  min-height: auto;
-  background: #eee4d6;
+  background: var(--wall);
   overflow: hidden;
 }
 
@@ -190,7 +187,7 @@ button {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   overflow: hidden;
-  background: #eee4d6;
+  background: var(--wall);
 }
 
 .hero-gallery-image {
@@ -204,10 +201,10 @@ button {
   position: absolute;
   left: 50%;
   top: 10.8%;
+  z-index: 12;
   width: min(92vw, 900px);
   transform: translateX(-50%);
   text-align: center;
-  z-index: 12;
 }
 
 .hero-title-card p {
@@ -228,10 +225,6 @@ button {
   line-height: 0.92;
   letter-spacing: -0.06em;
   text-shadow: 0 8px 28px rgba(255, 255, 255, 0.52);
-}
-
-.hero-title-card span {
-  display: none;
 }
 
 .hero-click {
@@ -264,14 +257,14 @@ button {
   height: 47.4%;
 }
 
-.hero-click-js {
+.hero-click-sp2 {
   left: 36.5%;
   top: 29.2%;
   width: 27.2%;
   height: 47.4%;
 }
 
-.hero-click-sp2 {
+.hero-click-js {
   left: 67.4%;
   top: 29.2%;
   width: 25.8%;
@@ -281,45 +274,46 @@ button {
 .hero-frame-label {
   position: absolute;
   z-index: 19;
-  width: 13rem;
-  padding: 0.45rem 0.7rem;
+  width: 12.5rem;
+  padding: 0.42rem 0.65rem;
   text-align: center;
   color: #241912;
-  background: rgba(223, 200, 154, 0.92);
+  background: rgba(223, 200, 154, 0.9);
   border: 1px solid rgba(70, 49, 25, 0.32);
   box-shadow: 0 10px 20px rgba(31, 37, 43, 0.14);
   font-family: var(--sans);
   pointer-events: none;
+  backdrop-filter: blur(5px);
 }
 
 .hero-frame-label span {
   display: block;
-  margin-bottom: 0.12rem;
-  font-size: 0.68rem;
+  margin-bottom: 0.1rem;
+  font-size: 0.62rem;
   letter-spacing: 0.12em;
   opacity: 0.72;
 }
 
 .hero-frame-label strong {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .hero-label-css {
-  left: 13.5%;
-  top: 76.5%;
+  left: 13.6%;
+  top: 73.5%;
 }
 
 .hero-label-sp2 {
-  left: 43.5%;
-  top: 76.5%;
+  left: 43.4%;
+  top: 73.5%;
 }
 
 .hero-label-js {
-  left: 73%;
-  top: 76.5%;
+  left: 73.2%;
+  top: 73.5%;
 }
 
 .hero-scroll-pill {
@@ -979,7 +973,9 @@ footer {
     transform: translateX(-17%);
   }
 
-  .hero-title-card {
+  .hero-title-card,
+  .hero-frame-label,
+  .hero-quote-card {
     display: none;
   }
 
@@ -996,23 +992,18 @@ footer {
     height: 43%;
   }
 
-  .hero-click-js {
+  .hero-click-sp2 {
     left: 34%;
     top: 24%;
     width: 33%;
     height: 43%;
   }
 
-  .hero-click-sp2 {
+  .hero-click-js {
     left: 67%;
     top: 24%;
     width: 33%;
     height: 43%;
-  }
-
-  .hero-frame-label,
-  .hero-quote-card {
-    display: none;
   }
 
   .hero-scroll-pill {
