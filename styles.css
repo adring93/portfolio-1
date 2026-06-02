@@ -274,46 +274,50 @@ button {
 .hero-frame-label {
   position: absolute;
   z-index: 19;
-  width: 12.5rem;
-  padding: 0.42rem 0.65rem;
+  width: 10.8rem;
+  padding: 0.38rem 0.55rem;
   text-align: center;
-  color: #241912;
-  background: rgba(223, 200, 154, 0.9);
-  border: 1px solid rgba(70, 49, 25, 0.32);
-  box-shadow: 0 10px 20px rgba(31, 37, 43, 0.14);
+  color: rgba(36, 25, 18, 0.82);
+  background: rgba(238, 224, 190, 0.62);
+  border: 1px solid rgba(70, 49, 25, 0.18);
+  box-shadow: 0 8px 18px rgba(31, 37, 43, 0.08);
   font-family: var(--sans);
   pointer-events: none;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
 }
 
 .hero-frame-label span {
-  display: block;
-  margin-bottom: 0.1rem;
-  font-size: 0.62rem;
+  display: inline-block;
+  margin-right: 0.35rem;
+  font-size: 0.58rem;
   letter-spacing: 0.12em;
-  opacity: 0.72;
+  opacity: 0.55;
 }
 
 .hero-frame-label strong {
-  display: block;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  display: inline-block;
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .hero-label-css {
-  left: 13.6%;
-  top: 73.5%;
+  left: 20.2%;
+  top: 74.8%;
+  transform: translateX(-50%);
 }
 
 .hero-label-sp2 {
-  left: 43.4%;
-  top: 73.5%;
+  left: 50%;
+  top: 74.8%;
+  transform: translateX(-50%);
 }
 
 .hero-label-js {
-  left: 73.2%;
-  top: 73.5%;
+  left: 79.6%;
+  top: 74.8%;
+  transform: translateX(-50%);
 }
 
 .hero-scroll-pill {
