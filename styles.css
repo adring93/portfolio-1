@@ -1011,3 +1011,37 @@ footer {
     border-width: 11px;
   }
 }
+@media (max-width: 980px) {
+  .hero-title-card {
+    display: none;
+  }
+
+  .hero-click {
+    display: block;
+  }
+
+  .hero-click-css {
+    left: 0;
+    top: 24%;
+    width: 35%;
+    height: 43%;
+  }
+
+  .hero-click-js {
+    left: 36%;
+    top: 24%;
+    width: 30%;
+    height: 43%;
+  }
+
+  .hero-click-sp2 {
+    left: 67%;
+    top: 24%;
+    width: 33%;
+    height: 43%;
+  }
+
+  .hero-scroll-pill {
+    bottom: 1.2rem;
+  }
+}
