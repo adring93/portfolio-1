@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adrian's Frontend Gallery | Portfolio</title>
-  <meta name="description" content="A gallery style frontend portfolio for Adrian Ingvartsen.">
+  <title>Projects | Adrian's Frontend Gallery</title>
+  <meta name="description" content="A full gallery of frontend projects by Adrian Ingvartsen, including Portfolio 2 projects, exams and course assignments.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header hero-header">
+  <header class="site-header">
     <a href="index.html" class="monogram" aria-label="Home">A</a>
 
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects</a>
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="skills.html">Skills</a>
       <a href="about.html">About</a>
     </nav>
@@ -24,109 +24,228 @@
   </header>
 
   <main>
-    <section class="hero-scene" aria-label="Adrian's Frontend Gallery hero section">
-      <div class="hero-image-stage">
-        <img
-          src="thumbnails/gallery-hero-final.png"
-          alt="Adrian's Frontend Gallery with three framed project screenshots"
-          class="hero-gallery-image"
-        >
-
-        <a href="css-frameworks.html" class="hero-click hero-click-css" aria-label="Open CSS Frameworks project"></a>
-        <a href="semester-project-2.html" class="hero-click hero-click-sp2" aria-label="Open Semester Project 2 project"></a>
-        <a href="javascript-frameworks.html" class="hero-click hero-click-js" aria-label="Open JavaScript Frameworks project"></a>
-
-        <div class="hero-title-card">
-          <p>Frontend portfolio exhibition</p>
-          <h1>Adrian's Frontend Gallery</h1>
-        </div>
-
-        <div class="hero-frame-label hero-label-css">
-          <span>01</span>
-          <strong>CSS Frameworks</strong>
-        </div>
-
-        <div class="hero-frame-label hero-label-sp2">
-          <span>02</span>
-          <strong>Semester Project 2</strong>
-        </div>
-
-        <div class="hero-frame-label hero-label-js">
-          <span>03</span>
-          <strong>JS Frameworks</strong>
-        </div>
-
-        <a href="#after-hero" class="hero-scroll-pill">
-          <span class="hero-scroll-circle">←</span>
-          <span>Scroll to explore</span>
-          <span class="hero-scroll-arrow">↓</span>
-        </a>
-
-        <aside class="hero-quote-card" aria-label="Design quote">
-          <p>“Good design is like art. It communicates.”</p>
-          <span>— Adrian</span>
-        </aside>
-      </div>
-    </section>
-
-    <section class="home-intro-panel" id="after-hero">
-      <p class="eyebrow">Portfolio 2 exhibition</p>
-      <h1>Frontend projects presented as a digital gallery</h1>
-      <p>
-        This portfolio presents my Portfolio 2 projects, additional school work and a broader picture of the technical and creative skills I have built during two years of frontend study.
+    <section class="article-hero">
+      <p class="eyebrow">Project gallery</p>
+      <h1>Selected frontend work</h1>
+      <div class="divider" aria-hidden="true"></div>
+      <p class="article-lead">
+        A wider view of projects from my frontend development studies, including course assignments, exams and team based development.
       </p>
-
-      <div class="home-intro-actions">
-        <a href="projects.html" class="museum-button">View all projects</a>
-        <a href="skills.html" class="museum-button">View skills</a>
-        <a href="about.html" class="museum-button">About me</a>
-      </div>
     </section>
 
-    <section class="home-showcase-grid">
-      <article>
-        <span>01</span>
-        <h2>CSS Frameworks</h2>
-        <p>A social app prototype improved with cleaner visual presentation, better contrast and working live deployment.</p>
-        <a href="css-frameworks.html">Read article →</a>
-      </article>
-
-      <article>
-        <span>02</span>
-        <h2>Semester Project 2</h2>
-        <p>AuctionHub improved with stronger listing presentation and a more polished marketplace experience.</p>
-        <a href="semester-project-2.html">Read article →</a>
-      </article>
-
-      <article>
-        <span>03</span>
-        <h2>JavaScript Frameworks</h2>
-        <p>A React and TypeScript online store improved with cart fixes and clearer feedback for user actions.</p>
-        <a href="javascript-frameworks.html">Read article →</a>
-      </article>
-    </section>
-
-    <section class="home-skills-preview">
-      <div>
-        <p class="eyebrow">Skills wall</p>
-        <h2>What I bring as a frontend developer</h2>
+    <section class="gallery-wall" aria-labelledby="portfolio-two-title">
+      <div class="section-heading">
+        <p class="eyebrow">Main exhibition</p>
+        <h2 id="portfolio-two-title">Featured projects</h2>
         <p>
-          I have worked with HTML, CSS, JavaScript, TypeScript, React, APIs, routing, state management, responsive design, accessibility, deployment and reflection driven improvement.
+          These three projects were selected, improved and presented as the main pieces in this portfolio.
         </p>
       </div>
 
-      <a href="skills.html" class="museum-button">Explore skills</a>
+      <article class="gallery-piece featured-piece">
+        <a href="css-frameworks.html" class="frame-link">
+          <div class="frame">
+            <div class="artwork artwork-image">
+              <img src="thumbnails/css-frameworks.png.png" alt="Screenshot of the CSS Frameworks Social App project">
+              <span class="artwork-label">Social App</span>
+            </div>
+            <span class="plaque">01</span>
+          </div>
+        </a>
+        <div class="piece-info">
+          <h3>CSS Frameworks</h3>
+          <p>Social app prototype improved with a cleaner visual style, better accessibility and working live deployment.</p>
+          <a href="css-frameworks.html" class="view-link">Read article <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="gallery-piece featured-piece">
+        <a href="javascript-frameworks.html" class="frame-link">
+          <div class="frame">
+            <div class="artwork artwork-image">
+              <img src="thumbnails/js-frameworks.png.png" alt="Screenshot of the JavaScript Frameworks online store project">
+              <span class="artwork-label">Online Store</span>
+            </div>
+            <span class="plaque">02</span>
+          </div>
+        </a>
+        <div class="piece-info">
+          <h3>JavaScript Frameworks</h3>
+          <p>React and TypeScript store improved by fixing cart calculation and adding visible user feedback.</p>
+          <a href="javascript-frameworks.html" class="view-link">Read article <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="gallery-piece featured-piece">
+        <a href="semester-project-2.html" class="frame-link">
+          <div class="frame">
+            <div class="artwork artwork-image">
+              <img src="thumbnails/semester-project-2.png.png" alt="Screenshot of the AuctionHub Semester Project 2 project">
+              <span class="artwork-label">AuctionHub</span>
+            </div>
+            <span class="plaque">03</span>
+          </div>
+        </a>
+        <div class="piece-info">
+          <h3>Semester Project 2</h3>
+          <p>Auction marketplace improved with stronger listing cards and a more polished browsing experience.</p>
+          <a href="semester-project-2.html" class="view-link">Read article <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="extended-gallery" aria-labelledby="exam-title">
+      <div class="section-heading">
+        <p class="eyebrow">Larger work</p>
+        <h2 id="exam-title">Exam projects</h2>
+        <p>
+          These projects show bigger planning, more features, API integration and a stronger connection between design, code and user experience.
+        </p>
+      </div>
+
+      <div class="small-gallery-grid">
+        <article class="small-piece">
+          <div class="small-frame artwork-holidaze">
+            <span>Holidaze</span>
+          </div>
+          <div>
+            <h3>Project Exam 2</h3>
+            <p>A modern accommodation booking application built with React, TypeScript, React Router and the Noroff Holidaze API.</p>
+            <div class="mini-links">
+              <a href="https://holidaze-adrian-pe2.netlify.app/" target="_blank" rel="noopener">Live site</a>
+              <a href="https://github.com/adring93/project-exam-2-holidaze" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-piece">
+          <div class="small-frame artwork-gutwell">
+            <span>GutWell</span>
+          </div>
+          <div>
+            <h3>Project Exam 1</h3>
+            <p>A health focused blog project with responsive pages, structured content and a clean visual direction.</p>
+            <div class="mini-links">
+              <a href="https://gutwell.netlify.app/" target="_blank" rel="noopener">Live site</a>
+              <a href="https://github.com/NoroffFEU/FED1-PE1-adring93" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-piece">
+          <div class="small-frame artwork-rootrise">
+            <span>RootRise</span>
+          </div>
+          <div>
+            <h3>HTML and CSS Resit</h3>
+            <p>A wellness website focused on HTML, CSS, responsive layout and stronger fundamentals.</p>
+            <div class="mini-links">
+              <a href="https://adring93.github.io/html-css-resit-AdrianIngvartsen" target="_blank" rel="noopener">Live site</a>
+              <a href="https://github.com/adring93/html-css-resit-AdrianIngvartsen" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="extended-gallery" aria-labelledby="course-title">
+      <div class="section-heading">
+        <p class="eyebrow">Course work</p>
+        <h2 id="course-title">Technical practice</h2>
+        <p>
+          These projects show practical work with JavaScript, workflow, collaboration, tooling, APIs and modern frontend habits.
+        </p>
+      </div>
+
+      <div class="small-gallery-grid">
+        <article class="small-piece">
+          <div class="small-frame artwork-agency">
+            <span>Agency 2</span>
+          </div>
+          <div>
+            <h3>Smart Recipe Book</h3>
+            <p>Team project where I contributed reusable components, a 404 page and production focused UI work.</p>
+            <div class="mini-links">
+              <a href="https://github.com/adring93" target="_blank" rel="noopener">GitHub profile</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-piece">
+          <div class="small-frame artwork-js2">
+            <span>JS2</span>
+          </div>
+          <div>
+            <h3>JavaScript 2 Course Assignment</h3>
+            <p>Social application work focused on API usage, authentication flow, posts, profiles and JavaScript structure.</p>
+            <div class="mini-links">
+              <a href="https://github.com/adring93/js2-course-assignment" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-piece">
+          <div class="small-frame artwork-workflow">
+            <span>Workflow</span>
+          </div>
+          <div>
+            <h3>Workflow Course Assignment</h3>
+            <p>Project focused on formatting, linting, testing, automation and a more professional developer workflow.</p>
+            <div class="mini-links">
+              <a href="https://github.com/adring93/workflow-repo-ca" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-piece">
+          <div class="small-frame artwork-css">
+            <span>Adventure Trails</span>
+          </div>
+          <div>
+            <h3>Adventure Trails Resit</h3>
+            <p>Frontend project focused on layout, content presentation and responsive HTML and CSS.</p>
+            <div class="mini-links">
+              <a href="https://github.com/adring93/adventure-trails-hikes-resit" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-piece">
+          <div class="small-frame artwork-sp2">
+            <span>Development Platforms</span>
+          </div>
+          <div>
+            <h3>Development Platforms</h3>
+            <p>Case study based work exploring development platform products and technical communication.</p>
+            <div class="mini-links">
+              <a href="https://github.com/adring93/development-platforms-ca" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="small-piece">
+          <div class="small-frame artwork-js">
+            <span>JS1 Resit</span>
+          </div>
+          <div>
+            <h3>JavaScript 1 Resit</h3>
+            <p>JavaScript project focused on API data, dynamic content and core frontend interaction.</p>
+            <div class="mini-links">
+              <a href="https://github.com/adring93/js1-resit-adrian" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="contact-card">
       <blockquote>
-        “The strongest skill I have built is learning how to keep going until the problem is solved.”
+        “A good portfolio should not only show what I built. It should show how I think.”
       </blockquote>
-
       <div class="contact-links">
+        <a href="skills.html">View skills</a>
         <a href="mailto:adring03472@stud.noroff.no">Email</a>
         <a href="https://github.com/adring93" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/adrian-i-414278358/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </section>
   </main>
