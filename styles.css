@@ -1100,3 +1100,42 @@ footer {
     margin-right: 1rem;
   }
 }
+@media (min-width: 1500px) {
+  .hero-scene {
+    display: flex;
+    justify-content: center;
+    background: var(--wall);
+  }
+
+  .hero-image-stage {
+    width: min(100vw, 1720px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-gallery-image {
+    width: 100%;
+  }
+
+  .hero-title-card h1 {
+    font-size: clamp(3.8rem, 4vw, 5.4rem);
+  }
+
+  .home-intro-panel,
+  .home-showcase-grid,
+  .home-skills-preview,
+  .gallery-wall,
+  .extended-gallery,
+  .skills-section,
+  .process-section,
+  .about-highlight,
+  .project-article {
+    max-width: 1240px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .hero-image-stage {
+    width: min(100vw, 1800px);
+  }
+}
