@@ -178,6 +178,7 @@ button {
 
 .hero-scene {
   position: relative;
+  min-height: 100vh;
   background: var(--wall);
   overflow: hidden;
 }
@@ -964,6 +965,10 @@ footer {
 }
 
 @media (max-width: 980px) {
+  .hero-scene {
+    min-height: auto;
+  }
+
   .hero-header {
     position: relative;
     left: auto;
@@ -1102,51 +1107,14 @@ footer {
 }
 
 @media (min-width: 1500px) {
-  .hero-image-stage {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-  }
-
-  .hero-gallery-image {
-    width: 100vw;
-    max-width: none;
-  }
-
-  .hero-title-card h1 {
-    font-size: clamp(4rem, 4.2vw, 5.6rem);
-  }
-
-  .home-intro-panel,
-  .home-showcase-grid,
-  .home-skills-preview,
-  .gallery-wall,
-  .extended-gallery,
-  .skills-section,
-  .process-section,
-  .about-highlight,
-  .project-article {
-    max-width: 1240px;
-  }
-}
-
-@media (min-width: 1900px) {
-  .hero-title-card {
-    top: 9.8%;
-  }
-
-  .hero-frame-label {
-    transform: translateX(-50%) scale(0.94);
-  }
-}
-@media (min-width: 1500px) {
   .hero-scene {
     position: relative;
+    min-height: 100vh;
     background:
       linear-gradient(rgba(238, 228, 214, 0.3), rgba(238, 228, 214, 0.3)),
       url("thumbnails/gallery-hero-final.png");
     background-size: cover;
     background-position: center top;
-    overflow: hidden;
   }
 
   .hero-scene::before {
@@ -1169,83 +1137,10 @@ footer {
 
   .hero-gallery-image {
     width: 100%;
+    height: auto;
     max-width: none;
-  }
-
-  .hero-title-card h1 {
-    font-size: clamp(4rem, 4vw, 5.6rem);
-  }
-
-  .home-intro-panel,
-  .home-showcase-grid,
-  .home-skills-preview,
-  .gallery-wall,
-  .extended-gallery,
-  .skills-section,
-  .process-section,
-  .about-highlight,
-  .project-article {
-    max-width: 1240px;
-  }
-}
-
-@media (min-width: 1900px) {
-  .hero-title-card {
-    top: 9.8%;
-  }
-
-  .hero-frame-label {
-    transform: translateX(-50%) scale(0.94);
-  }
-}
-@media (min-width: 981px) {
-  .hero-scene {
-    min-height: 100vh;
-    display: flex;
-    align-items: stretch;
-    overflow: hidden;
-  }
-
-  .hero-image-stage {
-    width: 100vw;
-    min-height: 100vh;
-    margin-left: calc(50% - 50vw);
-  }
-
-  .hero-gallery-image {
-    width: 100vw;
-    height: 100vh;
-    max-width: none;
-    object-fit: cover;
-    object-position: center top;
-  }
-}
-
-@media (min-width: 1500px) {
-  .hero-scene {
-    background:
-      linear-gradient(rgba(238, 228, 214, 0.3), rgba(238, 228, 214, 0.3)),
-      url("thumbnails/gallery-hero-final.png");
-    background-size: cover;
-    background-position: center top;
-  }
-
-  .hero-scene::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background: rgba(238, 228, 214, 0.3);
-    backdrop-filter: blur(18px);
-  }
-
-  .hero-image-stage {
-    position: relative;
-    z-index: 1;
-    width: min(100vw, 1900px);
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 28px 90px rgba(31, 37, 43, 0.16);
+    object-fit: unset;
+    object-position: unset;
   }
 
   .hero-title-card h1 {
