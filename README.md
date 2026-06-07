@@ -32,10 +32,10 @@ The goal of this portfolio was not only to show finished projects, but also to p
 
 * Gallery inspired portfolio design
 * Interactive hero section with clickable framed project previews
-* Responsive layout for desktop and mobile
-* Dedicated project pages
-* Skills page
-* About page
+* Responsive layout for mobile, desktop and wider screens
+* Dedicated article pages for selected projects
+* Projects overview page
+* About page with background, skills and professional reflection
 * Contact links
 * Reusable visual style across all pages
 * Subtle gallery background atmosphere on inner pages
@@ -46,18 +46,19 @@ The goal of this portfolio was not only to show finished projects, but also to p
 
 ### CSS Frameworks
 
-A social app prototype built with modern CSS techniques and improved visual presentation.
-This project focuses on layout, spacing, reusable styling and responsive design.
-
-### JavaScript Frameworks
-
-An online store project built with React and TypeScript.
-The project includes product listing, cart functionality and a cleaner user experience.
+A social app prototype built with Tailwind CSS and improved for Portfolio 2 with a cleaner visual style, better spacing, stronger contrast and working live deployment.
 
 ### Semester Project 2
 
 AuctionHub, an auction website where users can browse listings and interact with auction content.
-For Portfolio 2, the project was improved visually with better listing cards, stronger layout and a more polished marketplace feel.
+
+For Portfolio 2, the project was improved visually with stronger listing cards, better layout and a more polished marketplace feel.
+
+### JavaScript Frameworks
+
+An online store project built with React and TypeScript.
+
+For Portfolio 2, I improved the cart experience by fixing the cart total calculation so discounted prices are used correctly, and by adding clearer user feedback when products are added to the cart.
 
 ---
 
@@ -66,8 +67,11 @@ For Portfolio 2, the project was improved visually with better listing cards, st
 * HTML
 * CSS
 * JavaScript
+* React
+* TypeScript
 * Responsive design
 * GitHub Pages
+* Netlify
 * Visual design and layout refinement
 
 ---
@@ -77,6 +81,8 @@ For Portfolio 2, the project was improved visually with better listing cards, st
 The portfolio uses a modern gallery concept to make the projects feel like curated exhibition pieces.
 
 The homepage uses a custom gallery hero image with the three main projects displayed inside framed artwork. The rest of the website continues the same visual direction with soft backgrounds, glass inspired panels and a calm museum style atmosphere.
+
+The goal was to make the portfolio feel more personal and memorable than a standard project card layout.
 
 ---
 
@@ -88,11 +94,31 @@ Some key improvements include:
 
 * Rebuilding the visual identity of the portfolio
 * Creating a stronger first impression
-* Adding dedicated pages for projects, skills and about
+* Adding dedicated article pages for the selected projects
 * Improving spacing, typography and consistency
 * Making the main project section interactive
+* Improving responsive behaviour across mobile, desktop and widescreen
 * Giving the portfolio a more unique and memorable concept
 * Cleaning up the CSS structure after several design iterations
+* Removing repeated content by combining the Skills content into the About page
+
+---
+
+## Use of AI
+
+I used AI as support during the development process.
+
+This included help with planning, debugging, wording, layout decisions and generating a custom gallery inspired hero image. The hero image was based on screenshots of my own projects, which were then presented as framed pieces inside a gallery style scene.
+
+The final implementation, structure, content choices, testing and design decisions were still reviewed and adjusted by me.
+
+---
+
+## Reflection
+
+Portfolio 2 became a way for me to look back at earlier projects and improve them with better judgement, cleaner presentation and stronger visual direction.
+
+The process also showed me how important responsive testing is. The site looked good on mobile and a normal desktop screen, but wider screens created new layout challenges. This helped me understand that responsive design is not only about making a site work on small screens, but also making sure it still feels balanced and intentional on larger screens.
 
 ---
 
