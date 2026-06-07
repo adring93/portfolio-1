@@ -1106,7 +1106,7 @@ footer {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2200px) {
   .hero-scene {
     position: relative;
     min-height: 100vh;
@@ -1160,7 +1160,7 @@ footer {
   }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 3000px) {
   .hero-image-stage {
     width: min(100vw, 2150px);
   }
