@@ -1129,7 +1129,7 @@ footer {
   .hero-image-stage {
     position: relative;
     z-index: 1;
-    width: min(100vw, 1900px);
+    width: min(100vw, 2050px);
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 28px 90px rgba(31, 37, 43, 0.16);
@@ -1161,6 +1161,10 @@ footer {
 }
 
 @media (min-width: 1900px) {
+  .hero-image-stage {
+    width: min(100vw, 2150px);
+  }
+
   .hero-title-card {
     top: 9.8%;
   }
