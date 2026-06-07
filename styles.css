@@ -178,6 +178,7 @@ button {
 
 .hero-scene {
   position: relative;
+  min-height: 100vh;
   background: var(--wall);
   overflow: hidden;
 }
@@ -1102,5 +1103,73 @@ footer {
   .contact-card {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  .hero-scene {
+    position: relative;
+    min-height: 100vh;
+    background:
+      linear-gradient(rgba(238, 228, 214, 0.3), rgba(238, 228, 214, 0.3)),
+      url("thumbnails/gallery-hero-final.png");
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .hero-scene::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(238, 228, 214, 0.34);
+    backdrop-filter: blur(18px);
+  }
+
+  .hero-image-stage {
+    position: relative;
+    z-index: 1;
+    width: min(100vw, 2050px);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 28px 90px rgba(31, 37, 43, 0.16);
+  }
+
+  .hero-gallery-image {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    object-fit: unset;
+    object-position: unset;
+  }
+
+  .hero-title-card h1 {
+    font-size: clamp(4rem, 4vw, 5.6rem);
+  }
+
+  .home-intro-panel,
+  .home-showcase-grid,
+  .home-skills-preview,
+  .gallery-wall,
+  .extended-gallery,
+  .skills-section,
+  .process-section,
+  .about-highlight,
+  .project-article {
+    max-width: 1240px;
+  }
+}
+
+@media (min-width: 3000px) {
+  .hero-image-stage {
+    width: min(100vw, 2150px);
+  }
+
+  .hero-title-card {
+    top: 9.8%;
+  }
+
+  .hero-frame-label {
+    transform: translateX(-50%) scale(0.94);
   }
 }
